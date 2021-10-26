@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+
+
+
+#calendar_table {
+   background-color: rgb(218 106 106);  
+   font-size: 0.9em; 
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+   width: 100%;
+
+   box-shadow: rgb(51, 51, 51) 0px 0px 1px,
+               rgb(51, 51, 51) 0px 0px 5px, 
+               rgb(51, 51, 51) 0px 0px 10px,
+               rgb(51, 51, 51) 0px 0px 20px;               
+}
+
+#calendar_table caption {
+   caption-side: top; 
+   text-align: center;
+   padding-bottom: 20px; 
+   font-size: 1.6em; 
+   letter-spacing: 0.3em;
+}
+
+.calendar_weekdays {
+   background-color: #8c81e6;
+   width: 14.28%; 
+   font-size: em; 
+   border-bottom: 5px solid gray;
+}
+
+.calendar_dates {
+   text-align: left; 
+   vertical-align: top;
+   font-size: 1.4em;
+   padding: 3px;
+   border: 1px dotted #000000000222;
+   background-color: #d44a4a;
+   height: 60px;
+}
+
+#calendar_today {
+   font-weight: bold; 
+   color: rgb(51, 51, 51);
+   background-color: rgb(76 126 202);
+   border: 1px solid black;
+}
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Movie Time </title>
+        <link href="style.css" rel="stylesheet"  />
+   
+   <script src="cart.js" async></script>  
+
+        <script src="cart.js" async></script>
+    </head>
+    <body>
+        <header>
+            <section>
+         <form id="memberForm">
+            <label for="username">Member Name</label>
+            <input id="username" name="user" type="text" />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="pwd" />
+         </form>
+      </section>
+                <img class = "img-cinema" src="cinema.jpg" alt="cinema" />
+
+  
+     <nav class = "horizontal">
+
+      <ul>
+
+         <li><a href="ProjectHome.html">Home</a></li>
+         <li><a href="UpcomingFilms.html">Upcoming Films</a></li>
+         <li><a href="Store.html">Store</a></li>
+         <li><a href="AboutUs.html">About US</a></li>
+         <li><a href="Gallery.html">Gallery</a></li>
+      </ul>
+     </nav>
+ </header>
+ <section id="summary">
+      <h1><font color ="white">Movie Tickets</h1>
+      <img src="ticketpurchase.png" alt="ticket" />
+      <img src="tshirt.jpeg" alt="ticket" />
+      <p><font color ="white">Purchase your movie tickets and T-Shirts here!</p>
+   </section>
+   
+   <section id="orderSection">
+      <form id="cart" name="cart" method="get" action="co_credit.html">>
+        
+        <table id="cartTable">
+           <caption><font color ="white">Shopping Cart</caption>
+           <tr>
+              <td>
+                 <label> Movie Ticket ($7.95)</label>
+                 <input type="hidden" name="modelCost" id="modelCost" value="7.95" />
+                 <input type="hidden" id="modelName" name="modelName" value="ECC115 Pump Espresso Machine ($7.95)" />
+              </td>
+              <td>
+                 <label> Movie T-Shirt ($12.95)</label>
+                 <input type="hidden" name="modelCost" id="modelCost" value="12.95" />
+                 <input type="hidden" id="modelName" name="modelName" value="ECC115 Pump Espresso Machine ($12.95)" />
+              </td>
+              <td class="rightA">
+                 <label for="modelQty">Qty</label>
+                 <select name="modelQty" id="modelQty">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>   
+              </td> 
+              <td class="rightA">
+                 <label for="modelQty">Qty</label>
+                 <select name="modelQty" id="modelQty">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>   
+              </td>                              
+              <td>
+                 <input type="text" name="orderCost" id="orderCost" size="10" readonly />
+              </td>
+              
+           </tr>
+           <tr>
+              <td colspan="2"> 
+                 <input type="hidden" id="shippingType" name="shippingType" />                
+                 <fieldset>
+                    <legend>FREE Shipping</legend>
+            
+                 </fieldset>
+              </td>
+              <td>
+                 <input type="text" name="shippingCost" id="shippingCost" size="10" readonly />
+              </td>
+           </tr>        
+           <tr>
+              <td colspan="2" class="rightA">Subtotal</td>
+              <td class="outcell">
+                 <input type="text" name="subTotal" id="subTotal" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">Tax (8%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">TOTAL</td>
+              <td>
+                 <input type="text" name="cartTotal" id="cartTotal" size="10" readonly />
+             </td>
+           </tr>
+        </table>
+    
+        <a href="payment.html" style="color: white;" class="nav-links">Checkout</a>
+
+      </form>
+   </section>
+ 
+<footer id = "footer" class = "main-footer">
+      Movie Time &copy; 2021 All Rights Reserved
+   </footer>
+    </body> 
+    </html>
+
